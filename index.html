@@ -22,6 +22,7 @@
         background-color: #fdfdff;
         border-radius: 0.5em;
         box-shadow: 2px 3px 7px 2px rgba(0, 0, 0, 0.02);
+
       }
       a:link,
       a:visited {
@@ -34,21 +35,13 @@
           width: auto;
         }
       }
-    </style>
-  </head>
-
-  <!--body of the page  -->
-  <body>
-    <!-- for the hero banner -->
-    <!-- <div
-      class="banner" 
-      ;
-      style="
+      .banner {
         position:relative;
+        background-image: none;
         background-size:cover;
-        width: fill;
+        width: 100%;
         height: 0%;
-        padding-top: 30%;
+        padding-top: 77.72%;
         padding-bottom: 0px;
         /* box-shadow: 0 0px 0px 0 rgba(63, 69, 81, 0.16); */
         margin-top: 0em;
@@ -56,7 +49,35 @@
         /* overflow: hidden; */
         /* border-radius: 8px; */
         border-color: transparent;
-      "
+        z-index: 1;
+      }
+
+      #expect{
+        width: 600px;
+        /* margin: 5em auto; */
+        /* padding: 2em; */
+        background-color: #fdfdff;
+        border-radius: 0.5em;
+        box-shadow: 2px 3px 7px 2px rgba(0, 0, 0, 0.02);
+        position: relative;
+        left: -100px;
+
+      }
+      
+      #firstpara{
+        position: absolute;
+        top: 10px;
+        left: 600px;
+        z-index: 2;
+      }
+    </style>
+  </head>
+
+  <!--body of the page  -->
+  <body>
+    <!-- for the hero banner -->
+    <div
+      class="banner"
     ></div>
     
     <style>
@@ -66,13 +87,13 @@
         /* background-image: url(https://raw.githubusercontent.com/Lazzzy-Panda/veganrunners/main/Vegan%20Runners.png); */
         /* background-image: url("https://raw.githubusercontent.com/Lazzzy-Panda/veganrunners/main/Copy%20of%20Vegan%20Runners1.jpg"); */
         background-image: url("https://raw.githubusercontent.com/Lazzzy-Panda/veganrunners/main/variety%20of%20veggies.jpg");
-      } -->
-    <!-- </style> -->
-<div>
+      }
+    </style>
+<!-- <div>
   <img src="https://raw.githubusercontent.com/Lazzzy-Panda/veganrunners/main/variety%20of%20veggies.jpg", width="100%", style="background-image: none; background-size: cover;">
-</div>
+</div> -->
 <!-- to state the RTG portfolio -->
-    <div class="para">
+    <div class="para" id="firstpara">
     
       <h1><em>Vegan Runners</em></h1>
       <h2><u>Portfolio</u></h2>
@@ -90,42 +111,14 @@
       <p>Discord: <a href="https://discordapp.com/users/981802834217541632">LazyPanda__zzz</a></p>
       <p>Instagram: <a href="https://www.instagram.com/ra_te_214">ra_te_214</a></p>
 
-
-      <!--     
-      <style>
-        div {
-        width: 600px;
-        margin: 5em auto;
-        padding: 2em;
-        background-color: #fdfdff;
-        border-radius: 0.5em;
-        box-shadow: 2px 3px 7px 2px rgba(0, 0, 0, 0.02);
-      }
-      a:link,
-      a:visited {
-        color: #38488f;
-        text-decoration: none;
-      }
-      @media (max-width: 700px) {
-        div {
-          margin: 0 auto;
-          width: auto;
-        }
-      }
-      </style> -->
-
     </div>
     <p style="color: #FFFFFF;">Workouts and Easy Meals by Holly Gabrielle</p>
-    <!-- <video title="Workouts and Easy Meals by Holly Gabrielle" width="426" height="240" controls aria-controls="">
-      <source  src="https://drive.google.com/file/d/14IgNFIAFeDinDizUGOu1E7lkdjwNWTFt/view?usp=sharing" type="video/mp4">
-     
-    </video> -->
 
-      <iframe width="426" height="240" src="https://www.youtube.com/embed/drkaCVFP1nc" title="HOW I EAT & TRAIN AS A VEGAN RUNNER | What I Eat in a Weekend, Workouts & Easy Meals *realistic*" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>    
+    <iframe width="426" height="240" src="https://www.youtube.com/embed/drkaCVFP1nc" title="HOW I EAT & TRAIN AS A VEGAN RUNNER | What I Eat in a Weekend, Workouts & Easy Meals *realistic*" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>    
     <hr />
     
     <!-- to state what to expect from the domain -->
-    <div class="para">
+    <div class="para" id="expect">
     
       <h2>What to expect from this domain?</h2>
     
@@ -199,7 +192,7 @@
     </div>
 
     <!-- table to show the different sites of Vegan Runners -->
-    <table
+    <table id="websites"
     style="
     width: 600px;
     margin: 5em auto;
